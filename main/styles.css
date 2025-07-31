@@ -35,16 +35,16 @@ body {
         background-position: center;
     }
     25% {
-        background-position: calc(50% - 4px) calc(50% + 2px);
+        background-position: calc(50% - 2px) calc(50% + 2px);
     }
     50% {
-        background-position: calc(50% + 4px) calc(50% - 2px);
+        background-position: calc(50% + 2px) calc(50% - 2px);
     }
     75% {
-        background-position: calc(50% - 4px) calc(50% - 2px);
+        background-position: calc(50% - 2px) calc(50% - 2px);
     }
     100% {
-        background-position: calc(50% + 4px) calc(50% + 2px);
+        background-position: calc(50% + 2px) calc(50% + 2px);
     }
 }
 
