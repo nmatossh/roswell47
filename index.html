@@ -288,9 +288,9 @@
                 }, 2000);
             }
             
-            // Actualizar medidor de fortaleza
+            // Actualiza medidor de fortaleza
             function updateStrengthMeter(password) {
-                // Calculamos la fortaleza (simplificado)
+                // Calcula la fortaleza
                 let strength = 0;
                 const length = password.length;
                 
@@ -300,13 +300,13 @@
                 if (/[0-9]/.test(password)) strength += 10;
                 if (/[^A-Za-z0-9]/.test(password)) strength += 15;
                 
-                // Limitamos a 100%
+                // Limita a 100%
                 strength = Math.min(100, strength);
                 
-                // Actualizamos la barra
+                // Actualiza la barra
                 strengthBar.style.width = strength + '%';
                 
-                // Cambiamos el color según la fortaleza
+                // Cambia el color según la fortaleza
                 if (strength < 40) {
                     strengthBar.style.backgroundColor = '#e74c3c';
                 } else if (strength < 70) {
@@ -316,12 +316,12 @@
                 }
             }
             
-            // Configuración por defecto: 16 caracteres con símbolos incluidos
-            lengthSlider.value = 16;
-            lengthValue.textContent = '16';
+            // Configuración por defecto: 24 caracteres con símbolos incluidos
+            lengthSlider.value = 24;
+            lengthValue.textContent = '24';
             symbolsCheckbox.checked = true;
             
-            // Generar una contraseña al cargar la página
+            // Genera una contraseña al cargar la página
             generateBtn.click();
         });
     </script>
